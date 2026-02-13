@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Custom CSS variables */
+:root {
+  --color-redwine: #8d1638;
+}
+html {
+  scroll-behavior: smooth;
+}
