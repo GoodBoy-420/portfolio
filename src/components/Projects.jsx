@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
+import { getStaticFIle } from "../utility/staticFile";
 
 const dummyProjects = [
   {
     name: "Booknest",
     description: "This is a sample project description.",
+    image: "booknest.jpg",
     tools: ["React", "NodeJS", "MongoDB", "TailwindCSS"],
     live: "https://booknest-virid.vercel.app/",
     git: "https://github.com/GoodBoy-420/bookNest",
@@ -11,6 +13,7 @@ const dummyProjects = [
   },
   {
     name: "Job Sphere",
+    image: "jobsphere.jpg",
     description: "This is a sample project description.",
     tools: ["React", "NodeJS", "MongoDB", "Shadcn"],
     live: "https://job-spherefrontend.vercel.app/",
@@ -66,7 +69,7 @@ const Projects = () => {
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all"
             >
               <div className="h-48 bg-gray-300">
-                <img src="https://placehold.co/600x400" alt="booknest" />
+                <img src={getStaticFIle(project.image)} alt="booknest" />
               </div>
 
               <div className="p-6">
